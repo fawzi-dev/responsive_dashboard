@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
-import '../models/all_expenses_item_model.dart';
-import '../utils/app_styles.dart';
+import '../../models/all_expenses_item_model.dart';
+import '../../utils/app_styles.dart';
 import 'all_expenses_item.dart';
 import 'all_expenses_item_header.dart';
 

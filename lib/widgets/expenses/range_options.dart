@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../utils/app_styles.dart';
+import '../../utils/app_styles.dart';
 
 class RangeOptions extends StatelessWidget {
   const RangeOptions({

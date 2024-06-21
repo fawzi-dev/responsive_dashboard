@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../utils/app_styles.dart';
+import '../../utils/app_styles.dart';
 import 'range_options.dart';
 
 class AllExpensesHeader extends StatelessWidget {
@@ -11,7 +11,7 @@ class AllExpensesHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(
+        Text( 
           'All Expenses',
           style: AppStyles.styleSemiBold20(context),
         ),

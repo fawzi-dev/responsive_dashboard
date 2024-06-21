@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/drawer_item_model.dart';
+import '../../models/drawer_item_model.dart';
 
 import 'active_and_inactive_drawer_item.dart';
 
