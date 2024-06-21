@@ -11,6 +11,10 @@ class DesktopDashboardLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final devieSize = MediaQuery.of(context).size.height;
+
+    print(devieSize);
+
     return Row(
       children: [
         const Expanded(
@@ -19,24 +23,28 @@ class DesktopDashboardLayout extends StatelessWidget {
         const Gap(32),
         const Expanded(
           flex: 2,
-          child: Column(
-            children: [
-              Expanded(
-                child: AllExpenses(),
+          child: Padding(
+            padding: EdgeInsets.symmetric(vertical: 32),
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  AllExpenses(),
+                  Gap(24),
+                  QuickInvoice(),
+                ],
               ),
-              Gap(24),
-              Expanded(
-                child: QuickInvoice(),
-              ),
-            ],
+            ),
           ),
         ),
         const Gap(32),
         Expanded(
-          flex: 2,
-          child: CustomBackgroundContainer(
-            child: SizedBox(
-              height: MediaQuery.of(context).size.height,
+          flex: 1,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 32),
+            child: CustomBackgroundContainer(
+              child: SizedBox(
+                height: MediaQuery.of(context).size.height,
+              ),
             ),
           ),
         )

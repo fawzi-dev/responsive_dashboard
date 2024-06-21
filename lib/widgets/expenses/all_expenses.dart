@@ -12,13 +12,15 @@ class AllExpenses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomBackgroundContainer(
-      padding: 20,
-      child: Column(
-        children: [
-          AllExpensesHeader(),
-          Gap(16),
-          AllExpensessItemsListView(),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            AllExpensesHeader(),
+            Gap(16),
+            AllExpensessItemsListView(),
+          ],
+        ),
       ),
     );
   }
