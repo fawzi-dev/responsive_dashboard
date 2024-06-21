@@ -46,9 +46,7 @@ class CustomDrawer extends StatelessWidget {
                   drawerItemModel: DrawerItemModel(
                       title: 'Logout account', image: Assets.imagesLogout),
                 ),
-                const SizedBox(
-                  height: 48,
-                )
+                const Gap(48)
               ],
             ),
           )

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 import '../models/all_expenses_item_model.dart';
 import '../utils/app_images.dart';
@@ -47,9 +48,7 @@ class _AllExpensessItemsListViewState extends State<AllExpensessItemsListView> {
             ),
           ),
         ),
-        const SizedBox(
-          width: 8,
-        ),
+        const Gap(8),
         Expanded(
           child: GestureDetector(
             onTap: () {
@@ -61,9 +60,7 @@ class _AllExpensessItemsListViewState extends State<AllExpensessItemsListView> {
             ),
           ),
         ),
-        const SizedBox(
-          width: 8,
-        ),
+        const Gap(8),
         Expanded(
           child: GestureDetector(
             onTap: () {

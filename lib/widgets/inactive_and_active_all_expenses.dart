@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 import '../models/all_expenses_item_model.dart';
 import '../utils/app_styles.dart';
@@ -31,9 +32,7 @@ class InActiveAllExpensessItem extends StatelessWidget {
           AllExpensessItemHeader(
             image: itemModel.image,
           ),
-          const SizedBox(
-            height: 34,
-          ),
+          const Gap(34),
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
@@ -41,9 +40,7 @@ class InActiveAllExpensessItem extends StatelessWidget {
               style: AppStyles.styleMedium16(context),
             ),
           ),
-          const SizedBox(
-            height: 8,
-          ),
+          const Gap(8),
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
@@ -51,9 +48,7 @@ class InActiveAllExpensessItem extends StatelessWidget {
               style: AppStyles.styleRegular14(context),
             ),
           ),
-          const SizedBox(
-            height: 16,
-          ),
+          const Gap(16),
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
@@ -94,9 +89,7 @@ class ActiveAllExpensessItem extends StatelessWidget {
             imageColor: Colors.white,
             image: itemModel.image,
           ),
-          const SizedBox(
-            height: 34,
-          ),
+          const Gap(34),
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
@@ -106,9 +99,7 @@ class ActiveAllExpensessItem extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(
-            height: 8,
-          ),
+          const Gap(8),
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
@@ -118,9 +109,7 @@ class ActiveAllExpensessItem extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(
-            height: 16,
-          ),
+          const Gap(16),
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
