@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/common/adaptive_layout.dart';
 import '../widgets/desktop_dashboard_layout.dart';
+import '../widgets/my_card/my_card.dart';
 
 class DashboardResponsive extends StatelessWidget {
   const DashboardResponsive({super.key});
@@ -10,7 +11,7 @@ class DashboardResponsive extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFF7F9FA),
       body: AdaptiveLayout(
-        mobileLayout: (context) => const SizedBox(),
+        mobileLayout: (context) => const MyCard(),
         tabletLayout: (context) => const SizedBox(),
         desktopLayout: (context) => const DesktopDashboardLayout(),
       ),
