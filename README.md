@@ -19,7 +19,7 @@ https://youtu.be/8A2IBac8b8E
 ## Screenshots
 
 ### Desktop Screenshot
-<img src="https://github.com/fawzitheprogrammer/responsive_dashboard/assets/84202263/934d4a52-2245-4df1-9e2f-a1d36e0e0fb5" height="720" />
+<img src="https://github.com/fawzitheprogrammer/responsive_dashboard/assets/84202263/934d4a52-2245-4df1-9e2f-a1d36e0e0fb5" />
 
 ### Tablet Screenshot
 <img src="https://github.com/fawzitheprogrammer/responsive_dashboard/assets/84202263/b1b2f57c-205f-4716-8a9a-1d893c16337b" height="720" />
