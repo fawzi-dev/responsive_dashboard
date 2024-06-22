@@ -4,7 +4,8 @@ import 'package:gap/gap.dart';
 import '../../models/user_model.dart';
 import '../../utils/app_images.dart';
 import '../../utils/app_styles.dart';
-import '../user_info_list_tile.dart';
+import '../../utils/scroll_behavior.dart';
+import '../common/user_info_list_tile.dart';
 
 class LatestTransaction extends StatelessWidget {
   const LatestTransaction({
@@ -37,7 +38,7 @@ class LatestTransaction extends StatelessWidget {
         ),
         const Gap(12),
         ScrollConfiguration(
-          behavior: const ScrollBehavior(),
+          behavior: scrollBehavior,
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
@@ -54,26 +55,6 @@ class LatestTransaction extends StatelessWidget {
             ),
           ),
         )
-        // SizedBox(
-        //   height: 80,
-        //   child: ScrollConfiguration(
-        //     behavior: const ScrollBehavior(),
-        //     child: ListView.builder(
-        //       scrollDirection: Axis.horizontal,
-        //       itemCount: items.length, // Number of items in the ListView
-        //       itemBuilder: (context, index) {
-        //         return Padding(
-        //           padding: const EdgeInsets.only(right: 12),
-        //           child: IntrinsicWidth(
-        //             child: UserInfoListTile(
-        //               userInfoModel: items[index],
-        //             ),
-        //           ),
-        //         );
-        //       },
-        //     ),
-        //   ),
-        // )
       ],
     );
   }

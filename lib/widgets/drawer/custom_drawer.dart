@@ -4,9 +4,10 @@ import 'package:gap/gap.dart';
 import '../../models/drawer_item_model.dart';
 import '../../models/user_model.dart';
 import '../../utils/app_images.dart';
+import '../../utils/scroll_behavior.dart';
 import 'active_and_inactive_drawer_item.dart';
 import 'drawer_item_listview.dart';
-import '../user_info_list_tile.dart';
+import '../common/user_info_list_tile.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -14,12 +15,14 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.sizeOf(context).width * .7,
+      width: MediaQuery.sizeOf(context).width * .65,
       color: const Color.fromRGBO(255, 255, 255, 1),
       child: Padding(
         padding: const EdgeInsets.only(left: 28),
         child: CustomScrollView(
+          scrollBehavior: scrollBehavior,
           slivers: [
+            const SliverToBoxAdapter(child: Gap(8)),
             const SliverToBoxAdapter(
               child: Padding(
                 padding: EdgeInsets.only(right: 28),

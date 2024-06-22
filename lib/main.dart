@@ -1,9 +1,16 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/views/dashboard_responsive.dart';
+import 'views/dashboard_responsive.dart';
+
+import 'utils/size_config.dart';
 
 void main() {
   runApp(
-    const ResponsiveDashboard(),
+    DevicePreview(
+      enabled: true,
+      builder: (context) => const ResponsiveDashboard(),
+    ),
   );
 }
 
@@ -12,9 +19,12 @@ class ResponsiveDashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    SizeConfig.init(context);
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DashboardResponsive(),
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
+      home: const DashboardResponsive(),
     );
   }
 }

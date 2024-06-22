@@ -53,16 +53,22 @@ class MyCardItem extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(
-                    '0918 8124 0042 8129',
-                    style: AppStyles.styleSemiBold20(context).copyWith(
-                      color: Colors.white,
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      '0918 8124 0042 8129',
+                      style: AppStyles.styleSemiBold20(context).copyWith(
+                        color: Colors.white,
+                      ),
                     ),
                   ),
-                  Text(
-                    '12/20',
-                    style: AppStyles.styleRegular16(context).copyWith(
-                      color: Colors.white,
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      '12/20',
+                      style: AppStyles.styleRegular16(context).copyWith(
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ],
